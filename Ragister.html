@@ -1,0 +1,111 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/regi.css">
+    <style>
+        #container {
+            width: 25%;
+            height: 1000px;
+            border: 1px solid red;
+            margin: auto;
+        }
+        
+        #navbar {
+            width: 100%;
+            height: 50px;
+            border: 1px solid red;
+            text-align: center;
+            padding-top: 20px;
+            font-size: 30px;
+            background-color: red;
+            color: white;
+        }
+        
+        #phn {
+            margin-left: 20px;
+        }
+        
+        #number {
+            padding: 10px;
+            margin-left: 10%;
+            border-radius: 10px;
+            border-color: red;
+        }
+        
+        #para {
+            margin-left: 10%;
+            margin-top: -30px;
+        }
+        
+        #password {
+            padding: 10px;
+            margin-left: 10%;
+            border-radius: 10px;
+            border-color: red;
+        }
+        
+        #rec {
+            padding: 10px;
+            margin-left: 10%;
+            border-radius: 10px;
+            border-color: red;
+        }
+        
+        #btn {
+            padding: 10px 80px 10px 80px;
+            margin-left: 15%;
+            border-radius: 20px;
+            background-color: lawngreen;
+            /* color: white; */
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        #check {
+            margin-left: 10%;
+        }
+        
+        #agree {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        #privacy {
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="navbar">
+            Register
+        </div>
+        <h3 id="phn">Phone number format:+91</h3>
+
+        <form id="form" onsubmit="getdata(event)">
+            <input type="text" id="number" size="35px" placeholder="Mobile"><br><br>
+
+            <input type="password" id="password" size="35px" placeholder="Password"><br><br>
+
+            <input type="password" id="rec" size="35px" placeholder="Recommendation Code"><br><br>
+
+            <input type="checkbox" id="check"><span id="agree"> I Agree</span> <span id="privacy">Privacy Policy</span><br><br>
+
+            <button id="btn">Register</button>
+
+
+        </form>
+
+    </div>
+</body>
+
+</html>
+<script src="./script/register.js">
+</script>
